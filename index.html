@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Rosana — Sabores hechos con amor. Comida casera: empanadas, pasteles, arepas, patacón y más. Pide por WhatsApp."
+    />
+    <title>Rosana — Sabores hechos con amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#inicio" class="brand" aria-label="Rosana inicio">
+          <span class="brand-title"
+            ><span class="chef" aria-hidden="true">👩‍🍳</span> Rosana<span
+              aria-hidden="true"
+              >💛</span
+            ></span
+          >
+          <span class="brand-tag">Sabores hechos con amor 💛</span>
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          aria-label="Abrir menú"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+        </button>
+        <nav aria-label="Principal">
+          <ul class="nav-links" id="main-nav">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#opiniones">Opiniones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="header-cta">
+          <a href="#" class="btn btn-whatsapp" data-whatsapp="">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="hero-badge">Sabores que te abrazan</span>
+            <h1>
+              Hecho en casa, <span class="script">hecho con amor 💛</span>
+            </h1>
+            <p class="hero-lead">
+              Usamos ingredientes frescos y recetas de familia para que cada bocado sepan a hogar.
+              <strong class="accent">¡Pruébalo y repite!</strong>
+            </p>
+            <div class="hero-actions">
+              <a href="#" class="btn btn-whatsapp" data-whatsapp="">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                  />
+                </svg>
+                Pedir por WhatsApp
+              </a>
+              <a href="#menu" class="btn btn-outline">Ver menú</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-collage">
+              <div class="cell cell-1">
+                <img src="assets/hero-1.jpg" alt="" width="600" height="800" loading="eager" />
+              </div>
+              <div class="cell">
+                <img src="assets/hero-2.jpg" alt="" width="600" height="400" loading="lazy" />
+              </div>
+              <div class="cell">
+                <img src="assets/hero-3.jpg" alt="" width="600" height="400" loading="lazy" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-bar" aria-label="Por qué elegirnos">
+        <div class="container features-grid">
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 21s-6-4.5-6-9a6 6 0 1 1 12 0c0 4.5-6 9-6 9z" />
+              <path d="M12 10h.01" fill="currentColor" stroke="none" />
+            </svg>
+            <h3>Hecho con amor</h3>
+            <p>Recetas caseras que saben a hogar.</p>
+          </div>
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 3.5 2 9 0 2.5-.5 4.5-1.5 6.5" />
+              <path d="M11 20a7 7 0 0 0 9.9-9.9" />
+              <path d="M15 13a4 4 0 0 0-4-4" />
+            </svg>
+            <h3>Ingredientes frescos</h3>
+            <p>Seleccionamos lo mejor cada día.</p>
+          </div>
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+            </svg>
+            <h3>Preparado al momento</h3>
+            <p>Todo sale caliente, recién hecho.</p>
+          </div>
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="5.5" cy="17.5" r="3.5" />
+              <circle cx="18.5" cy="17.5" r="3.5" />
+              <path d="M15 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-3.5 3.5 2.5-2.5L15 9m-6 6h9" />
+              <path d="M8 17h.01M5.5 9.5 8 17l2-5h3" />
+            </svg>
+            <h3>Atención rápida</h3>
+            <p>Tu pedido, listo para disfrutar.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="container">
+          <div class="section-head">
+            <h2>Nuestro menú</h2>
+            <p>Variedad de sabores para todos los antojos.</p>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card">
+              <div class="thumb">
+                <img src="assets/menu-pasteles.jpg" alt="Pasteles de carne" loading="lazy" width="400" height="300" />
+              </div>
+              <div class="body">
+                <h3>Pasteles de carne</h3>
+                <p class="desc">
+                  Masa dorada y jugoso relleno de carne sazonada, como en casa.
+                </p>
+                <p class="price">$2.000 c/u</p>
+                <a href="#" class="btn btn-orange" data-whatsapp="Pasteles de carne ($2.000 c/u). ">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                  </svg>
+                  Pedir
+                </a>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="thumb">
+                <img src="assets/menu-patacon.jpg" alt="Patacón con carne desmechada" loading="lazy" width="400" height="300" />
+              </div>
+              <div class="body">
+                <h3>Patacón con carne desmechada</h3>
+                <p class="desc">
+                  Platano verde crocante con carnita lenta y sabrosa, bien cargadito.
+                </p>
+                <p class="price">$12.000</p>
+                <a href="#" class="btn btn-orange" data-whatsapp="Patacón con carne desmechada ($12.000). ">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                  </svg>
+                  Pedir
+                </a>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="thumb">
+                <img src="assets/menu-empanadas.jpg" alt="Empanadas de papa" loading="lazy" width="400" height="300" />
+              </div>
+              <div class="body">
+                <h3>Empanadas de papa</h3>
+                <p class="desc">
+                  Crujientes por fuera y suavecitas por dentro, con papa y carne.
+                </p>
+                <p class="price">$2.500 c/u</p>
+                <a href="#" class="btn btn-orange" data-whatsapp="Empanadas de papa ($2.500 c/u). ">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                  </svg>
+                  Pedir
+                </a>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="thumb">
+                <img src="assets/menu-salchipapas.jpg" alt="Salchipapas" loading="lazy" width="400" height="300" />
+              </div>
+              <div class="body">
+                <h3>Salchipapas</h3>
+                <p class="desc">
+                  Papas doradas con salchicha, salsas y mucho antojo.
+                </p>
+                <p class="price">$10.000</p>
+                <a href="#" class="btn btn-orange" data-whatsapp="Salchipapas ($10.000). ">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                  </svg>
+                  Pedir
+                </a>
+              </div>
+            </article>
+            <article class="menu-card">
+              <div class="thumb">
+                <img src="assets/menu-arepas.jpg" alt="Arepas de queso" loading="lazy" width="400" height="300" />
+              </div>
+              <div class="body">
+                <h3>Arepas de queso</h3>
+                <p class="desc">
+                  Queso derretido en cada bocado, recién salidas del fogón.
+                </p>
+                <p class="price">$4.000 c/u</p>
+                <a href="#" class="btn btn-orange" data-whatsapp="Arepas de queso ($4.000 c/u). ">
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                  </svg>
+                  Pedir
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="nosotros">
+        <div class="container about-grid">
+          <div class="about-box">
+            <h3>Hecho con amor, para ti 💛</h3>
+            <p>
+              Gracias por confiar en nuestra cocina. Cada pedido es una oportunidad
+              de consentirte con el sabor de siempre — el de verdad.
+            </p>
+          </div>
+          <div class="about-photos">
+            <img src="assets/prep-1.jpg" alt="Preparación en cocina" loading="lazy" width="200" height="120" />
+            <img src="assets/prep-2.jpg" alt="Fritura de empanadas" loading="lazy" width="200" height="120" />
+            <img src="assets/prep-3.jpg" alt="Listo para servir" loading="lazy" width="200" height="120" />
+          </div>
+          <div class="checklist">
+            <h3>Perfecto para cualquier ocasión</h3>
+            <ul>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                Almuerzos en familia
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                Antojos a cualquier hora
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                Reuniones con amigos
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M20 6L9 17l-5-5" />
+                </svg>
+                Momentos que saben bien
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="split-section" id="opiniones">
+        <div class="container split-grid">
+          <div>
+            <h2 class="subsection-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonial-list">
+              <article class="testimonial">
+                <img
+                  class="avatar"
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=120&q=80"
+                  alt=""
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <div>
+                  <blockquote>
+                    «Todo sabe casero y el patacón quedó divino. ¡Ya pedimos otra vez!»
+                  </blockquote>
+                  <div class="who">Laura M.</div>
+                  <div class="stars" aria-label="5 de 5">★★★★★</div>
+                </div>
+              </article>
+              <article class="testimonial">
+                <img
+                  class="avatar"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&q=80"
+                  alt=""
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <div>
+                  <blockquote>
+                    «Las empanadas llegaron calientes y crocantes. Servicio rapidísimo.»
+                  </blockquote>
+                  <div class="who">Andrés P.</div>
+                  <div class="stars" aria-label="5 de 5">★★★★★</div>
+                </div>
+              </article>
+              <article class="testimonial">
+                <img
+                  class="avatar"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=120&q=80"
+                  alt=""
+                  width="56"
+                  height="56"
+                  loading="lazy"
+                />
+                <div>
+                  <blockquote>
+                    «El detalle y el sabor se notan. Se volvió nuestro antojo de domingo.»
+                  </blockquote>
+                  <div class="who">Carolina R.</div>
+                  <div class="stars" aria-label="5 de 5">★★★★★</div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="map-card" id="contacto">
+            <h2 class="subsection-title">¿Dónde estamos?</h2>
+            <p class="address" data-bind-address>
+              Barrio La Esperanza, Calle 45 #12-34
+            </p>
+            <button type="button" class="btn btn-orange" data-maps>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Ver en el mapa
+            </button>
+            <div class="map-illustration" aria-hidden="true">
+              <svg viewBox="0 0 200 120" fill="none">
+                <rect x="10" y="15" width="180" height="90" rx="8" fill="#faf0e4" stroke="#e86424" stroke-width="1.5" />
+                <path d="M30 85 L70 45 L110 70 L150 40 L175 55" stroke="#c74e18" stroke-width="2" stroke-linecap="round" />
+                <path
+                  d="M95 58 L95 52 C95 48 100 45 105 48 C110 50 108 58 105 62 L95 72 Z"
+                  fill="#e86424"
+                  stroke="#2d1b10"
+                  stroke-width="1.2"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-banner" aria-label="Pedido por WhatsApp">
+        <div class="container cta-inner">
+          <p>¿Se te antojó algo rico? Haz tu pedido ahora por WhatsApp y disfrútalo al instante.</p>
+          <a href="#" class="btn btn-whatsapp" data-whatsapp="">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+              />
+            </svg>
+            Pedir por WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="brand">
+              <span class="brand-title">Rosana 💛</span>
+              <span class="brand-tag">Sabores hechos con amor</span>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Contáctanos</h4>
+            <p><span data-bind-phone>+57 300 123 4567</span></p>
+            <p>
+              <a href="#" data-bind-instagram-link data-bind-instagram>@rosana_sabores</a>
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Horarios</h4>
+            <p>Lunes a Domingo<br />9:00 a.m. — 8:00 p.m.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Síguenos</h4>
+            <div class="social-row">
+              <a href="#" data-bind-facebook-link aria-label="Facebook">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a href="#" data-bind-instagram-link aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+            </div>
+            <p class="footer-heart">¡Gracias por apoyar lo nuestro! 💛</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="sr-only">Copyright</span> © <span id="year"></span> Rosana. Con amor desde la cocina.
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
