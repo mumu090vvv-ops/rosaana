@@ -169,13 +169,18 @@
                   Redondo y doradito, relleno de pollo desmechado bien sabroso — el clásico que antoja.
                 </p>
                 <p class="price">$2.000 c/u</p>
-                <a href="#" class="btn btn-orange" data-whatsapp="Pastel de pollo ($2.000 c/u). ">
+                <button
+                  type="button"
+                  class="btn btn-orange"
+                  data-order="pastel"
+                  data-product="Pastel de pollo"
+                >
                   <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
                     <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
                   </svg>
                   Pedir
-                </a>
+                </button>
               </div>
             </article>
             <article class="menu-card">
@@ -193,14 +198,19 @@
                 <p class="desc">
                   Platano verde crocante con carnita lenta y sabrosa, bien cargadito.
                 </p>
-                <p class="price">$12.000</p>
-                <a href="#" class="btn btn-orange" data-whatsapp="Patacón con carne desmechada ($12.000). ">
+                <p class="price">$12.000 c/u</p>
+                <button
+                  type="button"
+                  class="btn btn-orange"
+                  data-order="patacon"
+                  data-product="Patacón con carne desmechada"
+                >
                   <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
                     <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
                   </svg>
                   Pedir
-                </a>
+                </button>
               </div>
             </article>
             <article class="menu-card">
@@ -219,13 +229,18 @@
                   Queso derretido en cada bocado, recién salidas del fogón.
                 </p>
                 <p class="price">$4.000 c/u</p>
-                <a href="#" class="btn btn-orange" data-whatsapp="Arepas de queso ($4.000 c/u). ">
+                <button
+                  type="button"
+                  class="btn btn-orange"
+                  data-order="arepa"
+                  data-product="Arepas de queso"
+                >
                   <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
                     <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
                   </svg>
                   Pedir
-                </a>
+                </button>
               </div>
             </article>
             <article class="menu-card">
@@ -237,14 +252,19 @@
                 <p class="desc">
                   Papas doradas con salchicha, salsas y mucho antojo.
                 </p>
-                <p class="price">$10.000</p>
-                <a href="#" class="btn btn-orange" data-whatsapp="Salchipapas ($10.000). ">
+                <p class="price">$10.000 c/u</p>
+                <button
+                  type="button"
+                  class="btn btn-orange"
+                  data-order="salchipapas"
+                  data-product="Salchipapas"
+                >
                   <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
                     <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
                   </svg>
                   Pedir
-                </a>
+                </button>
               </div>
             </article>
             <article class="menu-card">
@@ -260,16 +280,23 @@
               <div class="body">
                 <h3>Empanadas de papa y carne</h3>
                 <p class="desc">
-                  Crujientes por fuera, con mezcla de papa y carne — como las de la casa.
+                  Paquete de 7 empanadas a buen precio, o sueltas al gusto. Crujientes y con sabor casero.
                 </p>
-                <p class="price">$2.500 c/u</p>
-                <a href="#" class="btn btn-orange" data-whatsapp="Empanadas de papa y carne ($2.500 c/u). ">
+                <p class="price">
+                  Paquete de 7: $2.000 · Sueltas: <span id="empanada-price-suelta">$500</span> c/u
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-orange"
+                  data-order="empanadas"
+                  data-product="Empanadas de papa y carne"
+                >
                   <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="9" cy="21" r="1" /><circle cx="20" cy="21" r="1" />
                     <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
                   </svg>
                   Pedir
-                </a>
+                </button>
               </div>
             </article>
           </div>
@@ -468,6 +495,29 @@
         </div>
       </div>
     </footer>
+
+    <div
+      id="order-modal"
+      class="order-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="order-modal-title"
+      hidden
+    >
+      <div class="order-modal__backdrop" tabindex="-1" data-close-order></div>
+      <div class="order-modal__panel">
+        <h2 id="order-modal-title" class="order-modal__title"></h2>
+        <div id="order-modal-fields" class="order-modal__fields"></div>
+        <p id="order-modal-error" class="order-modal__error" role="alert" hidden></p>
+        <p id="order-modal-total-line" class="order-modal__total"></p>
+        <div class="order-modal__actions">
+          <button type="button" class="btn btn-outline" data-close-order>Cancelar</button>
+          <button type="button" class="btn btn-whatsapp" id="order-modal-send">
+            Enviar por WhatsApp
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script src="js/config.js"></script>
     <script src="js/main.js"></script>

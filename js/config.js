@@ -20,4 +20,17 @@ window.ROSAANA_CONFIG = {
   instagram: "https://www.instagram.com/",
   facebook: "https://www.facebook.com/",
   instagramHandle: "@rosana_sabores",
+  /**
+   * Precios en pesos COP (sin puntos ni símbolo).
+   * empanadaIndividual: precio por empanada suelta (fuera del paquete de 7).
+   */
+  prices: {
+    pastel: 2000,
+    patacon: 12000,
+    arepa: 4000,
+    salchipapas: 10000,
+    empanadaPack: 2000,
+    empanadasPerPack: 7,
+    empanadaIndividual: 500,
+  },
 };
