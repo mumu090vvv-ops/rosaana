@@ -8,7 +8,8 @@ Edita **`js/config.js`**:
 
 - `whatsappNumber`: número con código de país, solo dígitos (sin `+`).
 - `defaultOrderMessage`: texto que aparecerá al inicio del mensaje en WhatsApp.
-- `address` y `mapsQuery`: dirección y búsqueda en Google Maps.
+- `address` y `mapsQuery`: dirección en Colombia y búsqueda en Google Maps.
+- `hoursLines`: array de líneas de horario (p. ej. cerrado entre semana y apertura de tarde).
 - `phoneDisplay`, `instagram`, `facebook`, `instagramHandle`: contacto visible y enlaces.
 
 Precios y platos: edita las tarjetas en **`index.html`**. Fotos en **`assets/`**: `pastel-pollo.jpg`, `patacon-carne.jpg`, `empanadas-papa-carne.jpg`, `salchipapas.jpg`, `arepa-queso.jpg`, más `prep-*.jpg` para la sección Nosotros (puedes reemplazar manteniendo el nombre del archivo).

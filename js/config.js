@@ -1,14 +1,19 @@
 /**
- * Ajusta estos datos con la información real del negocio.
- * WhatsApp: número con código de país, sin + ni espacios (ej. Colombia: 57...)
+ * Datos del negocio (Colombia).
+ * WhatsApp: código de país 57 + número, sin + ni espacios.
  */
 window.ROSAANA_CONFIG = {
-  whatsappNumber: "573001234567",
+  whatsappNumber: "573127826789",
   defaultOrderMessage:
     "Hola Rosana — ¡qué delicia! Me gustaría hacer un pedido: ",
-  address: "Barrio La Esperanza, Calle 45 #12-34",
-  mapsQuery: "Barrio La Esperanza, Calle 45 12-34",
-  phoneDisplay: "+57 300 123 4567",
+  address: "Cra. 56 #52c28, barrio El Rosario, Bello, Antioquia, Colombia",
+  mapsQuery: "Cra. 56 #52c28, El Rosario, Bello, Antioquia, Colombia",
+  phoneDisplay: "+57 312 782 6789",
+  /** Líneas de horario (según ficha en Google Maps; confirma en feriados). */
+  hoursLines: [
+    "Lunes a miércoles: cerrado",
+    "Jueves a domingo: 4:30 p. m. — 11:00 p. m.",
+  ],
   instagram: "https://www.instagram.com/",
   facebook: "https://www.facebook.com/",
   instagramHandle: "@rosana_sabores",

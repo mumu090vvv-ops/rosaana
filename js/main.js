@@ -42,6 +42,15 @@
   document.querySelectorAll("[data-bind-phone]").forEach(function (el) {
     if (c.phoneDisplay) el.textContent = c.phoneDisplay;
   });
+  document.querySelectorAll("[data-bind-hours]").forEach(function (el) {
+    var lines = c.hoursLines;
+    if (!lines || !lines.length) return;
+    el.textContent = "";
+    lines.forEach(function (line, i) {
+      el.appendChild(document.createTextNode(line));
+      if (i < lines.length - 1) el.appendChild(document.createElement("br"));
+    });
+  });
   document.querySelectorAll("[data-bind-instagram]").forEach(function (el) {
     if (c.instagramHandle) el.textContent = c.instagramHandle;
   });

@@ -677,8 +677,15 @@ a {
 
 .map-card .address {
   font-size: 0.95rem;
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
   color: var(--color-text);
+  line-height: 1.5;
+}
+
+.map-card .hours-snippet.subtle {
+  font-size: 0.84rem;
+  color: var(--color-muted);
+  margin: 0 0 1rem;
   line-height: 1.5;
 }
 
