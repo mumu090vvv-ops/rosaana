@@ -25,9 +25,12 @@
   if (mapsBtn) {
     mapsBtn.addEventListener("click", function (e) {
       e.preventDefault();
-      const q = cfg().mapsQuery || cfg().address || "";
-      const url =
-        "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q);
+      const c = cfg();
+      var url = c.mapsPlaceUrl;
+      if (!url) {
+        var q = c.mapsQuery || c.address || "";
+        url = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q);
+      }
       window.open(url, "_blank", "noopener,noreferrer");
     });
   }
