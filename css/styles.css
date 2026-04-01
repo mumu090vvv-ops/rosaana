@@ -726,12 +726,12 @@ a {
 
 .cta-banner::before {
   left: 0;
-  background-image: url("../assets/banner-patacon.jpg");
+  background-image: url("../assets/patacon-carne.jpg");
 }
 
 .cta-banner::after {
   right: 0;
-  background-image: url("../assets/banner-empanadas.jpg");
+  background-image: url("../assets/empanadas-papa-carne.jpg");
 }
 
 .cta-inner {

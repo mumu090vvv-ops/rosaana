@@ -11,7 +11,7 @@ Edita **`js/config.js`**:
 - `address` y `mapsQuery`: dirección y búsqueda en Google Maps.
 - `phoneDisplay`, `instagram`, `facebook`, `instagramHandle`: contacto visible y enlaces.
 
-Precios y platos: edita las tarjetas en **`index.html`**. Las fotos locales están en **`assets/`** (puedes reemplazar los archivos manteniendo los mismos nombres).
+Precios y platos: edita las tarjetas en **`index.html`**. Fotos en **`assets/`**: `pastel-pollo.jpg`, `patacon-carne.jpg`, `empanadas-papa-carne.jpg`, `salchipapas.jpg`, `arepa-queso.jpg`, más `prep-*.jpg` para la sección Nosotros (puedes reemplazar manteniendo el nombre del archivo).
 
 ## Licencia de fotos
 
